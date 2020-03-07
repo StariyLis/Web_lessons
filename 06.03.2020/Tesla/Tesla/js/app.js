@@ -2,7 +2,7 @@ $(function() {
   $(".slider").slick({
     arrows: false,
     fade: true,
-    autoplay: true,
+    autoplay: 3000,
     dots: true
   });
 });
