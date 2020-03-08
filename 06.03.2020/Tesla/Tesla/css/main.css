@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 body {
-  background-color: #0b0b0b;
+  background-color: #000;
   color: #fff;
   font-size: 24px;
   line-height: 28px;
@@ -74,6 +74,82 @@ body {
 .page-btn:hover {
   background-color: #770302;
 }
+
+.container-menu {
+  position: relative;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.95);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  left: -100%;
+  transition: all 0.7s;
+  z-index: 7;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.close-btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 31px;
+  cursor: pointer;
+}
+
+.close-btn::after,
+.close-btn::before {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  transform-origin: left;
+}
+
+.close-btn::after {
+  transform: rotate(45deg);
+}
+
+.close-btn::before {
+  transform: rotate(-45deg);
+  bottom: -1px;
+}
+
+.menu__list {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu__list ul {
+  list-style: none;
+}
+
+.menu__list a {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  padding: 30px 25px 14px 0;
+  border-bottom: 3px solid #b70021;
+  min-width: 368px;
+  transition: all 0.3s;
+}
+
+.menu__list a:hover {
+  border-color: #fff;
+  color: #b70021;
+  transform: scale(1.2);
+  margin-left: 38px;
+}
+
 .slider__item {
   height: 100vh;
   background-repeat: no-repeat;
@@ -99,8 +175,8 @@ body {
 }
 .slider .slick-dots {
   margin: -55px auto 0;
-  max-width: 1200px;
-
+  max-width: 1230px;
+  padding: 0 15px;
   position: relative;
   z-index: 6;
 }
@@ -238,4 +314,24 @@ body {
   content: "|";
   position: absolute;
   left: -5px;
+}
+
+@media (max-width: 450px) {
+  .logo img {
+    width: 200px;
+  }
+  .header-content__title {
+    font-size: 70px;
+    line-height: 65px;
+    margin-top: 20px;
+  }
+
+  .menu__list a {
+    display: block;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    padding: 20px 15px 4px 0;
+    min-width: 100%;
+  }
 }
