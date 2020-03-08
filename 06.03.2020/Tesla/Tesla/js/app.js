@@ -6,3 +6,11 @@ $(function() {
     dots: true
   });
 });
+
+$(".header-btn").on("click", function() {
+  $(".menu").toggleClass("active");
+});
+
+$(".close-btn").on("click", function() {
+  $(".menu").toggleClass("active");
+});

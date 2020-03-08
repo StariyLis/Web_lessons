@@ -316,8 +316,26 @@ body {
   position: absolute;
   left: -5px;
 }
-@media (max-width: 800px) {
-  flex-wrap: wrap;
+@media (max-width: 1250px) {
+  .advantages__title{
+    position: static;
+    text-align: center;
+  }
+  .advantages-descr__bottom{
+    position: relative;
+  }
+  .advantages__titl--bottom{
+    position: absolute;
+    top: 0;
+  }
+  .advantages-row {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
 }
 @media (max-width: 600px) {
   .logo img {
@@ -327,6 +345,9 @@ body {
     font-size: 85px;
     line-height: 65px;
     margin-top: 20px;
+  }
+  .page-btn{
+    padding: 25px 40px;
   }
 
   .menu__list a {
@@ -364,6 +385,9 @@ body {
     line-height: 40px;
     padding: 25px 50px 6px 0;
     min-width: 100%;
+  }
+  .video{
+    margin-bottom: 50px;
   }
 }
 
