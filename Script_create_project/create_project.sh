@@ -8,7 +8,7 @@ cd $dir
 mkdir Source $workdir
 touch info.txt
 cd $workdir
-mkdir css js image fonts
+mkdir css js images fonts
 touch index.html
 touch ./css/main.css
 touch ./js/app.js
