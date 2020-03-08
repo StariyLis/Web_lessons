@@ -1,7 +1,7 @@
 @echo off
 chcp 65001
 Set /P $project=  Введите название проекта ^>
-cd F:\Web_lessons
+cd F:/Learning/Web_lessons
 md "%date%/%$project%/%$project%/"
 md "%date%/%$project%/Sourse"
 type nul > "%date%/%$project%/info.txt"
