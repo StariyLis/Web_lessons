@@ -1,6 +1,6 @@
 #!/bin/bash
 workdir=$1
-dir="$HOME/Share/Web_lessons"
+dir="$HOME/Learning/Web_lessons"
 cd $dir
 dir+=`date +%x`/$workdir
 mkdir -p $dir
